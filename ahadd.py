@@ -235,7 +235,7 @@ if __name__ == '__main__':
     usage = "usage: %prog [Options] output_file input_files"
     version = "%prog Version 2.3.4\n\nCopyright (C) 2014 Alexander Gude - gude@physics.umn.edu\nThis is free software.  You may redistribute copies of it under the terms of\nthe GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Alexander Gude."
     parser = OptionParser(usage=usage, version=version)
-    parser.add_option("-n", "--n-files-at-once", action="store", type="int", dest="nAtOnce", default=5, help="combine this many files at one time [defualt 5]")
+    parser.add_option("-n", "--n-files-at-once", action="store", type="int", dest="nAtOnce", default=5, help="combine this many files at one time [default 5]")
     parser.add_option("-t", "--temp-dir", action="store", type="string", dest="tmp_dir", default="/uscmst1b_scratch/lpc1/3DayLifetime/", help="location to store temporary intermediate files")
     parser.add_option("-s", "--save-temp", action="store_true", dest="save_tmp", default=False, help="save temporary files, otherwise they are cleaned up when the program exits [default false]")
     parser.add_option("-v", "--verbose", action="store_true", dest="verbose", default=False, help="print some extra status messages to stdout [default false]")
